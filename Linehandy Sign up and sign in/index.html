@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Linehandy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+            <img src="lh.png" width="130px">
+			<h1>Create Account</h1>
+			<div class="social-container">
+                <a href="https://www.twitter.com/ameer_105/"><img src="twitter.png"></a>
+                <a href="https://facebook.com/Ameer.Bamigbayan.1/"><img src="facebook.png"></a>
+                <a href="https://github.com/AmeerDamilola"><img src="github.png"></a>
+			</div>
+		
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+            <img src="lh.png" width="130px">
+			<h1>Sign in</h1>
+			<div class="social-container">
+                <a href="https://www.twitter.com/ameer_105/"><img src="twitter.png"></a>
+                <a href="https://facebook.com/Ameer.Bamigbayan.1/"><img src="facebook.png"></a>
+                <a href="https://github.com/AmeerDamilola"><img src="github.png"></a>
+			</div>
+		
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Have an Accout?</h1>
+				<p>Sign in to your account using your Email and Password</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>New Here?</h1>
+				<p>Enter your personal details and create an account now!</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+
+	<p>Linehandy | Copyright 2021 | All Rights Reserved</p>
+</footer>
+</body>
+<script>
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</html>
